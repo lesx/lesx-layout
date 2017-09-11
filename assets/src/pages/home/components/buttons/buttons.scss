@@ -1,0 +1,54 @@
+.doc-buttons {
+    text-align: center;
+    position: relative;
+    z-index: 9;
+
+    .button {
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        vertical-align: middle;
+        min-width: 70px;
+        border-radius: 4px;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+
+    .button.large {
+        padding: 0 25px;
+        height: 50px;
+        line-height: 50px;
+        min-width: 90px;
+        font-size: 16px;
+        border-radius: 4px;
+    }
+
+    .button-ghost {
+        border: #FFF 1px solid;
+        color: #FFF;
+    }
+
+    .button-ghost:active,
+    .button-ghost:hover {
+        color: #000;
+        background-color: #FFF;
+    }
+
+    .button-ghost[disabled] {
+        opacity: 0.7 !important;
+        background-color: rgba(255, 255, 255, 0.7) !important;
+    }
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .fa-arrow-right:before {
+        content: "\F061";
+    }
+}
